@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <title>Responsive website template for products</title>
     <!-- Meta -->
@@ -18,10 +18,9 @@
     <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-
 </head> 
 
-<body class="home-page">   
+<body class="features-page">    
     <!-- ******HEADER****** --> 
     <header id="header" class="header navbar-fixed-top">  
         <div class="container">       
@@ -31,8 +30,8 @@
                 </button>
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="slam.html">¿Cómo crear un Slam?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="active nav-item"><a class="nav-link" href="slam.html">¿Cómo crear un Slam?</a></li>
                         <li class="nav-item"><a class="nav-link" href="pricing.html">¿Quiénes somos?</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Tipos de Preguntas <i class="fa fa-angle-down"></i></a>
@@ -54,54 +53,50 @@
         </div><!--//container-->
     </header><!--//header-->
     
-    <div class="bg-slider-wrapper">
-        <div class="flexslider bg-slider">
-            <ul class="slides">
-                <li class="slide slide-1"></li>
-                <li class="slide slide-2"></li>
-                <li class="slide slide-3"></li>
-            </ul>
-        </div>
-    </div><!--//bg-slider-wrapper-->        
+    <div class="headline-bg">
+    </div><!--//headline-bg-->         
     
-    <section class="promo section section-on-bg">
-        <div class="container text-center">                
-            <h2 class="title">¡Crea tu propio Slam y pide a tus amigos un recuerdo!</h2>
-            <p class="intro" >¡Responde todo tipo de preguntas! <br /> ¡Diversión y curiosidad sin limites!</p>
-            <p><a class="btn btn-cta btn-cta-primary" href="signup.html">¡Ingresar!</a></p>   
-            <button type="button" class="play-trigger btn-link " data-toggle="modal" data-target="#modal-video" ><i class="fa fa-youtube-play"></i> Watch the video</button>
+    <!-- ******Video Section****** --> 
+    <section class="features-video section section-on-bg">
+        <div class="container text-center">          
+            <h2 class="title">¿Cómo crear un Slam?</h2>
+            <div class="video-container">
+                <img src="assets/images/background/createSlam.jpg" alt="Smiley face" height="405" width="720">
+            </div><!--//video-container--> 
         </div><!--//container-->
-    </section><!--//promo-->
-
+    </section><!--//feature-video-->
     
-    <!-- Video Modal -->
-    <div class="modal modal-video" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 id="videoModalLabel" class="modal-title sr-only">Video Tour</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="video-container embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" id="vimeo-video" src="//player.vimeo.com/video/28872840?color=ffffff&amp;wmode=transparent" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    </div><!--//video-container-->
-                </div><!--//modal-body-->
-            </div><!--//modal-content-->
-        </div><!--//modal-dialog-->
-    </div><!--//modal-->
+    <!-- ******Steps Section****** --> 
+    <section class="steps section">
+        <div class="container">
+            <h2 class="title text-center">3 Simples pasos para crear tu slam</h2>
+            <div class="row">
+                 <div class="step text-center col-xs-12 col-sm-4">
+                     <h3 class="title"><span class="number">1</span><br /><span class="text">Registrate con tu facebook</span></h3>
+                     <p>Ingresa con tu facebook o twitter a la aplicación.</p>
+                 </div><!--//step-->
+                 <div class="step text-center col-xs-12 col-sm-4">
+                     <h3 class="title"><span class="number">2</span><br /><span class="text">Crear tu Slam</span></h3>
+                     <p>Selecciona la opción para crear tu Slam y elige el nombre adecuado.</p>
+                 </div><!--//step-->
+                 <div class="step text-center col-xs-12 col-sm-4">
+                     <h3 class="title"><span class="number">3</span><br /><span class="text">¡Completa tus preguntas y listo!</span></h3>
+                     <p>Completa las preguntas y envía tu Slam a los amigos que desees.</p>
+                 </div><!--//step-->
+            </div><!--//row-->
+            
+            <div class="text-center"><a class="btn btn-cta btn-cta-primary" href="signup.html">¡Ingresar!</a></div>
+            
+        </div><!--//container-->        
+    </section><!--//steps-->
     
- 
     <!-- Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-    <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>     
+    <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
-    
-    <!-- Modal video -->
-    <script type="text/javascript" src="assets/js/modal-video.js"></script> 
     
             
 </body>
