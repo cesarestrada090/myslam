@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Responsive website template for products</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'> 
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+</head> 
+
+<body class="home-page">   
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header navbar-fixed-top">  
+        <div class="container">       
+            <nav class="main-nav navbar navbar-right navbar-inverse navbar-expand-md" role="navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="slam">¿Cómo crear un Slam?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">¿Quiénes somos?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tiposDePreguntas.html">Tipos de Preguntas</a></li>                       
+                        <li class="nav-item"><a class="nav-link" href="login.html">Ingresar</a></li>
+                        <li class="nav-item nav-item-cta last"><a style="background: #3b5998; border: none;" class="btn btn-cta btn-cta-secondary" href="signup.html">¡Registrate solo con facebook!</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->                     
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="bg-slider-wrapper">
+        <div class="flexslider bg-slider">
+            <ul class="slides">
+                <li class="slide slide-1"></li>
+                <li class="slide slide-2"></li>
+                <li class="slide slide-3"></li>
+            </ul>
+        </div>
+    </div><!--//bg-slider-wrapper-->        
+    
+    <section class="promo section section-on-bg">
+        <div class="container text-center">                
+            <h2 class="title">¡Crea tu propio Slam y pide a tus amigos un recuerdo!</h2>
+            <p class="intro" >¡Responde todo tipo de preguntas! <br /> ¡Diversión y curiosidad sin limites!</p>
+            <p><a class="btn btn-cta btn-cta-primary" href="signup.html">¡Ingresar!</a></p>   
+            <button type="button" class="play-trigger btn-link " data-toggle="modal" data-target="#modal-video" ><i class="fa fa-youtube-play"></i> Watch the video</button>
+        </div><!--//container-->
+    </section><!--//promo-->
+
+    
+    <!-- Video Modal -->
+    <div class="modal modal-video" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 id="videoModalLabel" class="modal-title sr-only">Video Tour</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="video-container embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" id="vimeo-video" src="//player.vimeo.com/video/28872840?color=ffffff&amp;wmode=transparent" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div><!--//video-container-->
+                </div><!--//modal-body-->
+            </div><!--//modal-content-->
+        </div><!--//modal-dialog-->
+    </div><!--//modal-->
+    
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>     
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+    <!-- Modal video -->
+    <script type="text/javascript" src="assets/js/modal-video.js"></script> 
+    
+            
+</body>
+</html> 
+
