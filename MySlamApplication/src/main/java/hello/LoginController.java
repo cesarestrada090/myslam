@@ -36,4 +36,10 @@ public class LoginController {
         model.addAttribute("feed", feed);
         return "hello";
     }
+
+    @RequestMapping("/login")
+    public String preguntas() {
+        return "login";
+    }
+
 }
