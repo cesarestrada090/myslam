@@ -1,52 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Invitar a los amigos de facebook</title>
-    <script src="http://connect.facebook.net/en_US/all.js"></script>
-    <script>
-        FB.init({
-            appId:'129690634457246',
-            cookie:true,
-            status:true,
-            xfbml:true
-        });
-        function Facebook_friends()
-        {
-            FB.ui({
-                method: 'apprequests',
-                message: 'Invitación a mi aplicación de facebook unodepiera'
-            });
-        }
-    </script>
-    <style type="text/css">
-        body{
-            background:#e0e0e0;
-        }
-        #facebook_friends{
-            margin: 220px 0px 0px 380px;
-            border-radius: 6px;
-            border: 2px solid #fff;
-            background: #526da5;
-            background: -webkit-gradient(linear, 0 0, 0 bottom, from(#526da5), to(#292929));
-            background: -webkit-linear-gradient(#526da5, #292929);
-            background: -moz-linear-gradient(#526da5, #292929);
-            background: -ms-linear-gradient(#526da5, #292929);
-            background: -o-linear-gradient(#526da5, #292929);
-            background: linear-gradient(#526da5, #292929);
-            -pie-background: linear-gradient(#526da5, #292929);
-            border-radius: 5px;
-            color: #fbfbfb;
-            behavior: url(PIE.php);
-            width: 400px;
-            padding: 20px 60px;
-            text-align: center;
-            font-size: 25px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Responsive website template for products</title>
+    <!-- Meta -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'/>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"/>
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css"/>
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css"/>
+
 </head>
-<body>
-<div id="facebook_friends" title="Invita a tus amigos de facebook" onclick="Facebook_friends();"><img src="facebook.jpg" width="50" height="50"/>&nbsp;&nbsp;Invita a tus amigos de facebook</div>
+
+<body class="about-page">
+<!-- ******HEADER****** -->
+<header id="header" class="header navbar-fixed-top">
+    <div class="container">
+        <nav class="main-nav navbar navbar-right navbar-inverse navbar-expand-md" role="navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="slam">¿Cómo crear un Slam?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros">¿Quiénes somos?</a></li>
+                    <li class="active nav-item"><a class="nav-link" href="preguntas">Tipos de Preguntas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="descargas">Descargas</a></li>
+                    <li class="nav-item nav-item-cta last"><a style="background: #3b5998; border: none;" class="btn btn-cta btn-cta-secondary" href="login">¡Registrate solo con facebook!</a></li>
+                </ul><!--//nav-->
+            </div><!--//navabr-collapse-->
+        </nav><!--//main-nav-->
+    </div><!--//container-->
+</header><!--//header-->
+
+<div class="headline-bg about-headline-bg">
+</div><!--//headline-bg-->
+
+<!-- ******Video Section****** -->
+<section class="story-section section section-on-bg">
+    <h2 class="title container text-center">Nuestra historia - Nuestro valor</h2>
+    <div class="story-container container text-center">
+        <div class="story-container-inner" >
+            <div class="about">
+                <p>Tell users the story behind the product. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, <a href="#">pretium quis</a>, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+                <blockquote class="belief">We believe sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</blockquote>
+            </div><!--//about-->
+            <div class="team">
+                <h3 class="title">Conoce al equipo</h3>
+                <div class="row">
+                    <div class="member col-lg-4 col-md-6 col-12">
+                        <div class="member-inner">
+                            <figure class="profile">
+                                <img class="img-fluid" src="assets/images/team/member-1.png" alt=""/>
+                                <figcaption class="info">
+                                    <span class="name">Danny Santa Cruz</span>
+                                    <br />
+                                    <span class="job-title">Co-Founder</span>
+
+                                </figcaption>
+                            </figure><!--//profile-->
+                            <div class="social">
+                                <ul class="social-list list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                </ul><!--//social-list-->
+                            </div><!--//social-->
+                        </div><!--//member-inner-->
+                    </div><!--//member-->
+                    <div class="member col-lg-4 col-md-6 col-12">
+                        <div class="member-inner">
+                            <figure class="profile">
+                                <img class="img-fluid" src="assets/images/team/member-2.png" alt=""/>
+                                <figcaption class="info"><span class="name">César Estrada</span><br /><span class="job-title">Co-Founder</span></figcaption>
+                            </figure><!--//profile-->
+                            <div class="social">
+                                <ul class="social-list list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                </ul><!--//social-list-->
+                            </div><!--//social-->
+                        </div><!--//member-inner-->
+                    </div><!--//member-->
+                    <div class="member col-lg-4 col-md-6 col-12">
+                        <div class="member-inner">
+                            <figure class="profile">
+                                <img class="img-fluid" src="assets/images/team/member-3.png" alt=""/>
+                                <figcaption class="info"><span class="name">Kharoly Córdova</span><br /><span class="job-title">Co-Founder</span></figcaption>
+                            </figure><!--//profile-->
+                            <div class="social">
+                                <ul class="social-list list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                </ul><!--//social-list-->
+                            </div><!--//social-->
+                        </div><!--//member-inner-->
+                    </div><!--//member-->
+                </div><!--//row-->
+            </div><!--//team-->
+            <div class="press-kit text-center">
+                <h3 class="title">Press Kit</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
+                <p>Please <a href="contact.html">contact us</a> if you need more materials.</p>
+                <a class="btn btn-cta btn-cta-secondary" href="#">Download Press Kit</a>
+            </div><!--//press-kit-->
+        </div><!--//story-container-->
+    </div><!--//container-->
+</section><!--//story-video-->
+<!-- Javascript -->
+<script type="text/javascript" src="assets/plugins/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+
 </body>
-</html>
+</html> 
+

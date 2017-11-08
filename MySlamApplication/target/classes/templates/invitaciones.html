@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Invitar a los amigos de facebook</title>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <script>
+        FB.init({
+            appId:'129690634457246',
+            cookie:true,
+            status:true,
+            xfbml:true
+        });
+        function Facebook_friends()
+        {
+            FB.ui({
+                method: 'apprequests',
+                message: 'Invitación a mi aplicación de facebook unodepiera'
+            });
+        }
+    </script>
+    <style type="text/css">
+        body{
+            background:#e0e0e0;
+        }
+        #facebook_friends{
+            margin: 220px 0px 0px 380px;
+            border-radius: 6px;
+            border: 2px solid #fff;
+            background: #526da5;
+            background: -webkit-gradient(linear, 0 0, 0 bottom, from(#526da5), to(#292929));
+            background: -webkit-linear-gradient(#526da5, #292929);
+            background: -moz-linear-gradient(#526da5, #292929);
+            background: -ms-linear-gradient(#526da5, #292929);
+            background: -o-linear-gradient(#526da5, #292929);
+            background: linear-gradient(#526da5, #292929);
+            -pie-background: linear-gradient(#526da5, #292929);
+            border-radius: 5px;
+            color: #fbfbfb;
+            behavior: url(PIE.php);
+            width: 400px;
+            padding: 20px 60px;
+            text-align: center;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="facebook_friends" title="Invita a tus amigos de facebook" onclick="Facebook_friends();"><img src="facebook.jpg" width="50" height="50"/>&nbsp;&nbsp;Invita a tus amigos de facebook</div>
+</body>
+</html>
