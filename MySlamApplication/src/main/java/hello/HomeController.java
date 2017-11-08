@@ -23,6 +23,16 @@ public class HomeController {
         return "tiposDePreguntas";
     }
 
+    @RequestMapping("/nosotros")
+    public String nosotros() {
+        return "nosotros";
+    }
+
+    @RequestMapping("/descargas")
+    public String descargas() {
+        return "descargas";
+    }
+
 
 
 }
